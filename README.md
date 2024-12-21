@@ -58,8 +58,8 @@ The backend server should now be running on http://localhost:5000.
 ## Environment Variables
 For the application to work correctly, you need to set up the following environment variables in a .env file in the root directory of your backend:
       ```bash
-      MONGODB_URI=mongodb://127.0.0.1:27017/e_commerce
-      JWT_SECRET=jwt_secret
+         MONGODB_URI=mongodb://127.0.0.1:27017/e_commerce
+         JWT_SECRET=jwt_secret
 
 MONGODB_URI: This is the URI for your local MongoDB instance (make sure MongoDB is running on your machine).
 JWT_SECRET: This secret is used for creating and verifying JSON Web Tokens (JWT) in the application.
@@ -69,3 +69,19 @@ To create the .env file, follow these steps:
 1. In the backend directory, create a .env file.
 2. Add the environment variables listed above.
 3. After setting up the .env file, restart the backend server to apply the changes.
+Database Setup
+To populate the database with initial test data for products and users, follow these steps:
+
+## Prerequisites
+Ensure that MongoDB is installed and running locally.
+
+Import Data
+Use the mongoimport command to import the JSON files directly into your MongoDB database.
+
+Run the following commands from the root of your project:
+   
+      ```bash
+         mongoimport --uri mongodb://127.0.0.1:27017/e_commerce --collection users --file ./backend/data/users.json --jsonArray
+         mongoimport --uri mongodb://127.0.0.1:27017/e_commerce --collection products --file ./backend/data/products.json --jsonArray
+
+Replace ./backend/data/users.json and ./backend/data/products.json with the paths to your JSON files if they are located elsewhere.
