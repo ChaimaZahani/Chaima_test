@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "6765a77af1a921ebb69c2c03"
+  },
+  "name": "Product 1",
+  "price": 10.99,
+  "description": "Description for product 1",
+  "category": "Category 1",
+  "imageUrl": "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6765ad93f1a921ebb69c2c25"
+  },
+  "name": "Product 2",
+  "price": 10.99,
+  "description": "Description for product 2",
+  "category": "test",
+  "imageUrl": "https://imgs.search.brave.com/ze4qIkcCKbHvDvHwTkeUIrfCoSJ4t_CrO7VX3NnNzo8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/NDcxMDk0L2ZyL3Bo/b3RvL29yZGluYXRl/dXIuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWJXTVNsaGRh/NnplT2wwMG9tcXpk/UnZhQkNMQnU5Yk1K/MVhHR2I0V0lXNnc9",
+  "__v": 0
+}]
